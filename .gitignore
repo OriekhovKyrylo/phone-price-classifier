@@ -1,0 +1,16 @@
+venv/
+.venv/
+
+.ipynb_checkpoints/
+notebooks/.ipynb_checkpoints/
+
+.idea/
+*.iml
+.vscode/
+
+*.png
+
+.DS_Store
+Thumbs.db
+
+data/predicted_phone_prices.csv

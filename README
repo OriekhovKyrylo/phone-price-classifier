@@ -1,0 +1,47 @@
+# Mobile Phone Price Classification
+
+Predict phone price range (0-3) based on specifications.
+
+## Dataset
+
+- 4020 phones total
+- 3020 with price labels (training)
+- 1000 without labels (predicted)
+- Features: battery, RAM, memory, screen, cores, etc.
+
+## Results
+
+| Model | Accuracy |
+|-------|----------|
+| XGBoost | 93.7% |
+| Random Forest | 92.1% |
+| Logistic Regression | 91.4% |
+
+## Key Insights
+
+- RAM is strongest predictor (0.83 correlation)
+- Battery power has moderate effect (0.30)
+- Data imbalanced: 50% phones in mid-range
+
+## Visualizations
+
+![Correlation Matrix](correlation_matrix.png)
+*Feature correlations show RAM dominates price prediction*
+
+![Confusion Matrix](confusion_matrix.png)
+*Model performs well across all price ranges*
+
+## How to run
+```bash
+pip install -r requirements.txt
+python phone_classifier.py
+
+
+Outputs:
+
+Trained model in models/
+Predictions in data/predicted_phone_prices.csv
+Visualizations: correlation_matrix.png, confusion_matrix.png
+
+EDA Notebook
+Interactive exploration with Plotly: notebooks/phone_eda.ipynb
