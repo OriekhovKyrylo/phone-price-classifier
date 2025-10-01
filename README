@@ -25,10 +25,10 @@ Predict phone price range (0-3) based on specifications
 
 ## Visualizations
 
-![Correlation Matrix](correlation_matrix.png)
+![Correlation Matrix](correlation_matrix.png?raw=true)
 *Feature correlations show RAM dominates price prediction*
 
-![Confusion Matrix](confusion_matrix.png)
+![Confusion Matrix](confusion_matrix.png?raw=true)
 *Model performs well across all price ranges*
 
 ## How to run
