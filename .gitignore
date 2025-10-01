@@ -8,7 +8,7 @@ notebooks/.ipynb_checkpoints/
 *.iml
 .vscode/
 
-*.png
+
 
 .DS_Store
 Thumbs.db
